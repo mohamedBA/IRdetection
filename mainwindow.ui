@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>354</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IRdetection</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="appressources.qrc">
+    <normaloff>:/Images/logo_VISirX.png</normaloff>:/Images/logo_VISirX.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="labelImage" name="LabelImage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>601</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>618</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOuvrir">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionImage"/>
+   </widget>
+   <widget class="QMenu" name="menuTraitement">
+    <property name="title">
+     <string>Traitement</string>
+    </property>
+    <addaction name="actionCr_er_Zone"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_Visirx">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionVisirx"/>
+    <addaction name="actionHelp"/>
+   </widget>
+   <addaction name="menuOuvrir"/>
+   <addaction name="menuTraitement"/>
+   <addaction name="menuAbout_Visirx"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionImage"/>
+   <addaction name="actionCr_er_Zone"/>
+   <addaction name="actionVisirx"/>
+   <addaction name="actionHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionImage">
+   <property name="icon">
+    <iconset resource="appressources.qrc">
+     <normaloff>:/Images/Open-file-icon.png</normaloff>:/Images/Open-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ouvrir Image</string>
+   </property>
+  </action>
+  <action name="actionCr_er_Zone">
+   <property name="icon">
+    <iconset resource="appressources.qrc">
+     <normaloff>:/Images/Sign-Select-icon.png</normaloff>:/Images/Sign-Select-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Créer Zone</string>
+   </property>
+  </action>
+  <action name="actionVisirx">
+   <property name="icon">
+    <iconset resource="appressources.qrc">
+     <normaloff>:/Images/user-info-icon.png</normaloff>:/Images/user-info-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Visirx</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="appressources.qrc">
+     <normaloff>:/Images/help-icon.png</normaloff>:/Images/help-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>help</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>labelImage</class>
+   <extends>QLabel</extends>
+   <header location="global">labelimage.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="appressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
